@@ -1,13 +1,30 @@
----
-layout: default
-title: 猪小呆
----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My name is JY</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+	
+	<body>
+		<table>
+			<tr>
+				<td class="title">Blog</td>
+				<td class="content"><a href="http://www.windsdiary.wordpress.com">Another way</td>
+			</tr>
+			<tr>
+				<td class="title">About</td>
+				<td class="content"><a href="http://www.jjgod.com/about">Jingyuan</td>
+			</tr>
+		</table>
+		<table id="links">
+			<tr>
+				<td><a href="https://twitter.com/#!/windsdiary">Twitter</a></td>
+				<td><a href="http://www.facebook.com/profile.php?id=770242659">Facebook</a></td>
+				<td>Google+</td>
+			</tr>
+		</table>
+	</body>
+</html>
 
-<h1>Blog Posts</h1>
-
-<ul>
-{% for post in site.posts %}
-  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> : {{ post.excerpt }}</li>
-{% endfor %}
-</ul>
 
