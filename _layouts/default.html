@@ -6,17 +6,19 @@
 		<link rel="stylesheet" href="/css/post.css"/>
 	</head>
 	<body>
-	<div id="structure">
-		<time datetime="{{page.date}}"  pubdate="pubdate"></time>
-	<div id="head">
-		<h1>Another Way</h1>
-	</div>
-		<h2>{{page.title}}</h2>
-		<p class="date">{{page.date}}</p>
-		<p>{{page.content}}</p>
-	</div>
-	<div id="footer">
-		<p>Blog @Github</p>
-	</div>
+		<div id="structure">
+				<time datetime="{{page.date}}"  pubdate="pubdate"></time>
+			<div id="head">
+				<h1>Another Way</h1>
+			</div>
+			<div id="content">
+				<h2>{{page.title}}</h2>
+				<p class="date">{{page.date}}</p>
+				<p>{{page.content}}</p>
+			</div>
+			<div id="footer">
+				<p>Blog @Github</p>
+			</div>
+		</div>
 	</body>
 </html>

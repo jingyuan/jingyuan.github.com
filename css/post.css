@@ -7,6 +7,7 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
 div#structure {
 	margin: 0;
 	padding: 0;
@@ -15,14 +16,21 @@ div#structure {
 	width: 700px;
 	background: url(/images/white.png);
 	background-repeat: repeat;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 }
 
 div#head {
+	float: left;
 	margin: 0;
 	padding: 0;
 	width: 700px;
 	height: 200px;
+}
+
+div#content {
+	width: 700px;
+	float: left;
+	padding-bottom: 50px;
 }
 
 h1 {
@@ -38,16 +46,13 @@ h2 {
 	margin: 0;
 	font-size: 1.4em;
 	padding: 40px 10px 5px 40px;
-	opacity: 1;
-	z-index: 1;
-	width: 100px;
+	width: auto;
 }
 
 p {
 	display: block;
 	margin: 0;
 	padding: 10px 30px 10px 30px;
-	opacity: 1;
 	font-size: 0.9em;
 	line-height: 1.5em;
 }
@@ -55,7 +60,6 @@ p {
 p.date {
 	margin: 0;
 	font-size: 0.8em;
-	width: 30px;
 	padding-left: 40px;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -67,11 +71,6 @@ p.date {
 }
 
 div#footer {
-	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	font-size: 0.7em;
-	padding-top: 20px;
-	background: url(/images/white.png);
 }
