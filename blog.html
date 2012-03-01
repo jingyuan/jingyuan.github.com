@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Another Way</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		{% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+	</body>
+</html>
