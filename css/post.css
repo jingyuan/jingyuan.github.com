@@ -1,4 +1,61 @@
-body{
-	color: red;
-	font-weight: bold;
+body {
+	font-size: medium;
+	color: #333333;
+	font-family: Myriad Pro, Rotis SansSerif Std, sans-serif;
+	background-image:url(/images/inflicted.png);
+	background-repeat: repeat;
+	padding: 0;
+	margin: 0;
+}
+div#structure {
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	background: url(/images/white.png);
+	background-repeat: repeat;
+	padding-bottom: 20px;
+}
+::selection {
+	background: #333333;
+	color: white;
+}
+
+div#head {
+	margin: 0;
+	padding: 0;
+	width: 700px;
+	height: 200px;
+}
+
+h1 {
+	color: black;
+	font-size: 1.8em;
+	float: right;
+	line-height: 1em;
+	padding-top: 150px;
+	padding-right: 15px;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.4em;
+	padding: 20px 10px 5px 15px;
+	opacity: 1;
+	z-index: 1;
+}
+
+p {
+	margin: 0;
+	padding: 0px 10px 10px 15px;
+	opacity: 1;
+}
+div#footer {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 0.7em;
+	background: url(../images/white.png);
 }
