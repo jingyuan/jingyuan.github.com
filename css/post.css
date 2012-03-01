@@ -17,10 +17,6 @@ div#structure {
 	background-repeat: repeat;
 	padding-bottom: 20px;
 }
-::selection {
-	background: #333333;
-	color: white;
-}
 
 div#head {
 	margin: 0;
@@ -44,15 +40,32 @@ h2 {
 	padding: 40px 10px 5px 40px;
 	opacity: 1;
 	z-index: 1;
+	width: 100px;
 }
 
 p {
+	display: block;
 	margin: 0;
 	padding: 10px 30px 10px 30px;
 	opacity: 1;
 	font-size: 0.9em;
 	line-height: 1.5em;
 }
+
+p.date {
+	margin: 0;
+	font-size: 0.8em;
+	width: 30px;
+	padding-left: 40px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+::selection {
+	background: #333333;
+	color: white;
+}
+
 div#footer {
 	width: 700px;
 	margin-left: auto;
@@ -60,5 +73,5 @@ div#footer {
 	text-align: center;
 	font-size: 0.7em;
 	padding-top: 20px;
-	background: url(../images/white.png);
+	background: url(/images/white.png);
 }
