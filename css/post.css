@@ -79,15 +79,15 @@ ul.posts {
 	padding-left: 40px;
 }
 
-a#list.link {
+a.link {
 	color: #333333;
 }
 
-a#list.hover {
+a.hover {
 	color: white;
 	background: #333333;
 }
 
-a#list.activated {
+a.activated {
 	color: gray;
 }
