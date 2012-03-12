@@ -75,20 +75,20 @@ div#footer {
 	font-size: 0.7em;
 }
 
-ul {
+ul.posts {
 	padding-left: 40px;
 	padding-top: 0;
 }
 
-a.link {
+a:link {
 	color: #333333;
 }
 
-a.hover {
+a:hover {
 	color: white;
 	background: #333333;
 }
 
-a.activated {
+a:activated {
 	color: gray;
 }
