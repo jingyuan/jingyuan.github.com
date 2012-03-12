@@ -74,3 +74,20 @@ div#footer {
 	text-align: center;
 	font-size: 0.7em;
 }
+
+ul.posts {
+	padding-left: 40px;
+}
+
+#list.link {
+	color: #333333;
+}
+
+#list.hover {
+	color: white;
+	background: #333333;
+}
+
+#list.activated {
+	color: gray;
+}
