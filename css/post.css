@@ -89,6 +89,6 @@ a:hover {
 	background: #333333;
 }
 
-a:activated {
+a:visited {
 	color: gray;
 }
