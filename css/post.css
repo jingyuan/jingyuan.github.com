@@ -75,8 +75,9 @@ div#footer {
 	font-size: 0.7em;
 }
 
-ul.posts {
+/*ul.posts {
 	padding-left: 40px;
+	padding-top: 0;
 }
 
 a.link {
@@ -90,4 +91,4 @@ a.hover {
 
 a.activated {
 	color: gray;
-}
+}*/
