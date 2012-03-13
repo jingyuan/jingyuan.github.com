@@ -76,7 +76,7 @@ div#footer {
 }
 
 ul.posts {
-	padding-left: 40px;
+	padding-left: 70px;
 	padding-top: 0;
 }
 
@@ -84,11 +84,11 @@ a:link {
 	color: #333333;
 }
 
+a:visited {
+	color: gray;
+}
+
 a:hover {
 	color: white;
 	background: #333333;
-}
-
-a:visited {
-	color: gray;
 }
