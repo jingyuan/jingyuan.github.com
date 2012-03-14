@@ -76,7 +76,7 @@ div#footer {
 }
 
 ul.posts {
-	padding-left: 80px;
+	padding-left: 60px;
 	padding-top: 0;
 }
 
@@ -91,4 +91,9 @@ a:visited {
 a:hover {
 	color: white;
 	background: #333333;
+}
+
+a#list {
+	position: fixed;
+	left: 80px;
 }
