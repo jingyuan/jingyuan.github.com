@@ -7,13 +7,13 @@
 	</head>
 	<body>
 		<div id="structure">
-				<time pubdate="pubdate"></time>
+				<time datetime="{{page.date}}" pubdate="pubdate"></time>
 			<div id="head">
 				<h1>Another Way</h1>
 			</div>
 			<div id="content">
 				<h2>{{page.title}}</h2>
-				<p>{{ page.date | date_to_string }}</p>
+				{{ page.date | date_to_string }}
 				{{ content }}
 			</div>
 			<div id="footer">
