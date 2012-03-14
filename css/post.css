@@ -112,5 +112,9 @@ img {
 #disqus_thread {
 	margin: 0;
 	padding: 0px 40px 10px 40px;
-	font-size: 0.9em;
+	font-size: 0.8em;
+}
+
+#dsq-account-dropdown h3 {
+	font-size: 1em;
 }
