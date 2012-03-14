@@ -94,6 +94,6 @@ a:hover {
 }
 
 a#list {
-	position: static;
+	position: inherit;
 	left: 80px;
 }
