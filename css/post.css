@@ -98,7 +98,8 @@ a:hover {
 
 span#list {
 	float: left;
-	width: 85px;
+	width: 75px;
 	color: #333333;
+	text-decoration: none;
 	
 }
