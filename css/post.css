@@ -81,6 +81,7 @@ ul.posts {
 	list-style-type: none;
 	font-size: 0.9em;
 	line-height: 1.5em;
+	text-decoration: none;
 }
 
 a:link {
@@ -94,10 +95,6 @@ a:visited {
 a:hover {
 	color: white;
 	background: #333333;
-}
-
-li {
-	text-decoration: none;
 }
 
 span#list {
