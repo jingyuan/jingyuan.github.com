@@ -107,6 +107,7 @@ span#list {
 img {
 	margin-left: auto;
 	margin-right: auto;
+	width: 620px;
 }
 
 #disqus_thread {
