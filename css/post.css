@@ -81,6 +81,9 @@ ul.posts {
 	list-style-type: none;
 	font-size: 0.9em;
 	line-height: 1.5em;
+}
+
+a {
 	text-decoration: none;
 }
 
@@ -132,5 +135,4 @@ img {
 
 #dsq-account-dropdown {
 	font-size: 1em;
-	text-decoration: none;
 }
