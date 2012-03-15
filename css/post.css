@@ -116,13 +116,13 @@ img {
 }
 
 #dsq-reply h3 {
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
 #dsq-content h3 {
 	font-size: 0.8em;
 }
 
-#dsq-clearfix {
-	zoom: 0.98;
+#dsq-footer {
+	display: none;
 }
