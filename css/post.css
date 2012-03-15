@@ -117,12 +117,12 @@ img {
 	padding: 0px 40px 10px 40px;
 }
 
-#dsq-reply h3 {
-	font-size: 1.4em;
-}
-
 #dsq-content h3 {
 	font-size: 0.8em;
+}
+
+#dsq-reply h3 {
+	font-size: 1.6em;
 }
 
 #dsq-pagination {
