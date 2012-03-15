@@ -96,12 +96,14 @@ a:hover {
 	background: #333333;
 }
 
+li {
+	text-decoration: none;
+}
+
 span#list {
 	float: left;
 	width: 75px;
-	color: #333333;
-	text-decoration: none;
-	
+	color: #333333;	
 }
 
 img {
@@ -126,6 +128,12 @@ img {
 #dsq-pagination {
 	display: none;
 }
+
 .dsq-global-toolbar-right {
 	display: none;
+}
+
+#dsq-account-dropdown {
+	font-size: 1em;
+	text-decoration: none;
 }
