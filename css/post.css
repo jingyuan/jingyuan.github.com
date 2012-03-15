@@ -116,6 +116,10 @@ img {
 	font-size: 0.8em;
 }
 
-#dsq-ewply h3 {
+#dsq-reply h3 {
 	font-size: 1em;
+}
+
+.dsq-clearfix {
+	zoom: 0.98;
 }
