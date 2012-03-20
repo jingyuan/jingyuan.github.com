@@ -99,6 +99,9 @@ a:hover {
 	color: white;
 	background: #333333;
 }
+a.post_link {
+	padding-left: 5px;
+}
 
 span#list {
 	float: left;
