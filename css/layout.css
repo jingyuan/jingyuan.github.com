@@ -1,0 +1,56 @@
+/* clear up style */
+h1, h2, p {
+padding: 0;
+margin: 0;
+}
+
+/* general style */
+a, a:visited {
+	color: #0000;
+	text-decoration: none;
+	outline: none;
+}
+
+/* The header style */
+h1 {
+	color: #CF2343;
+	/*text-transform: uppercase;*/
+	font-weight: 600;
+	font-size: 4em;
+	text-shadow: 0px 1px 2px rgba(51,51,51,0.77);
+}
+
+#sitenav {
+	width: inherit;
+}
+
+#sitenav table {
+	padding-left: 700px;
+	font-size: 1.6em;
+	font-weight: 400;
+	padding-top: 50px;
+}
+
+#sitenav table td {
+	padding: 0px 5px 0px 5px;	
+}
+
+#sitenav table td a {
+	color: #CF2343;
+}
+
+#content {
+	width: 870px;
+	margin: auto;
+	padding: 0;
+	margin-top: 30px;
+}
+
+footer {
+	font-size: 1.5em;
+	color: #a0a0a0;
+	width: 870;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+}
