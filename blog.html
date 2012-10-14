@@ -1,67 +1,21 @@
-<!doctype html>
-<html>
-<head>
-<title>blog</title>
-<meta charset="utf-8" />
+---
+layout: archives
+title: Blog archive
+date: 2011 to now
+---
+<ul id = "introduction" class="post_list">
+	{% for post in site.posts %}
+	{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+	{% if year != y %}
+    {% assign year = y %}
+    <li class="year">{{ y }}</li>
+  {% endif %}
+  <li>
+    <time class = "post_date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a class="post_link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
 
-<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
-<link rel="stylesheet" href="css/layout.css" />
-
-<style type="text/css">
-body {
-	text-decoration: none;
-	font-size: 9px;
-	font-family: 'Gentium Basic', serif;
-	width: 870px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#blog a {
-	font-weight: 600;
-}
-</style>
-</head>
-
-<body>
-<!-- Header with background_full_widow including the text -->
-	<header id="mini_head">
-		<h1>
-			Courage+
-		</h1>
-
-		<!-- The navigation sector -->
-		<nav id="sitenav">
-			<table>
-				<td id="portfolio"><a href="index.html">Portfolio</a></td>
-				<td id="blog"><a href="blog/blog.html">Blog</a></td>
-				<td id="about"><a href="about.html">About</a></td>
-			</table>
-		</nav>
-	</header>
-	
-	<content>
-<!-- Here comes the content from the markdown -->
-<!-- combine the css with the about/protopage -->
-	 <ul class="posts">
-		  {% for post in site.posts %}
-		  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-		  {% if year != y %}
-		    {% assign year = y %}
-		    <li class="listing-seperator">{{ y }}</li>
-		  {% endif %}
-		  <li>
-		    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-		    <a class="post_link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-		  </li>
-		{% endfor %}
-		</ul>
-	</content>
-	
-	<footer>
-		<p>Designed by Jingyuan - 2012</p>
-	</footer>
-</body>
-</html>
 
 
