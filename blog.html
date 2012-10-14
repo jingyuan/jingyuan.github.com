@@ -1,19 +1,11 @@
 <!doctype html>
 <html>
-
----
-layout: mainpage
-title: Blog posts
-date: 2011 to now
----
-
 <head>
 <title>blog</title>
 <meta charset="utf-8" />
 
 <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
-<link rel="stylesheet" href="../../../css/basic-jquery-slider.css" />
-<link rel="stylesheet" href="../../css/layout.css" />
+<link rel="stylesheet" href="css/layout.css" />
 
 <style type="text/css">
 body {
@@ -35,15 +27,15 @@ body {
 <!-- Header with background_full_widow including the text -->
 	<header id="mini_head">
 		<h1>
-			The title
+			Courage+
 		</h1>
 
 		<!-- The navigation sector -->
 		<nav id="sitenav">
 			<table>
-				<td id="portfolio"><a href="../../index.html">Portfolio</a></td>
-				<td id="blog"><a href="../../../pages/blog/blog.html">Blog</a></td>
-				<td id="about"><a href="../about.html">About</a></td>
+				<td id="portfolio"><a href="index.html">Portfolio</a></td>
+				<td id="blog"><a href="blog/blog.html">Blog</a></td>
+				<td id="about"><a href="about.html">About</a></td>
 			</table>
 		</nav>
 	</header>
@@ -51,7 +43,7 @@ body {
 	<content>
 <!-- Here comes the content from the markdown -->
 <!-- combine the css with the about/protopage -->
-		<ul class="posts">
+	 <ul class="posts">
 		  {% for post in site.posts %}
 		  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
 		  {% if year != y %}
@@ -64,10 +56,12 @@ body {
 		  </li>
 		{% endfor %}
 		</ul>
-
 	</content>
-
+	
+	<footer>
+		<p>Designed by Jingyuan - 2012</p>
+	</footer>
 </body>
-
+</html>
 
 
