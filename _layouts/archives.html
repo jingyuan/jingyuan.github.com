@@ -24,7 +24,7 @@
 		<nav id="sitenav">
 			<table>
 				<td id="portfolio"><a href="index.html">Portfolio</a></td>
-				<td id="blog"><a href="blog/blog.html">Blog</a></td>
+				<td id="blog"><a href="blog.html">Blog</a></td>
 				<td id="about"><a href="about.html">About</a></td>
 			</table>
 		</nav>
@@ -33,16 +33,24 @@
 	<div id = "content">
 		<div id = "column">
 		 	<h2>
-			 	Tag cloud
+			 	Links
 			</h2>
+			<ul id="contact">
+				<!-- Maybe you should wrap the <li> inside <a>, what's the difference? -->
+				<li class="link" ><a href="http://claudia2104.blogbus.com/">Yi</a></li>
+				<li class="link" ><a href="http://yanghaofan.blogbus.com/">Ian</li>
+				<li class="link" ><a href="http://belovedunicorn.blogbus.com/">Jessie</a></li>
+				<li class="link" ><a href="http://nikki723.blogbus.com/">Nikki</a></li>
+				<li class="link" ><a href="http://blog.jjgod.org/">Jjgod</a></li>
+			</ul>
+
 	    </div>
-	    
+	    	<div id="introduction">
 <!-- Here comes the content from the markdown -->
 <!-- combine the css with the about/protopage -->
-		{{content}}
-	    
-	</div>
-	
+			{{content}}
+	    	</div>
+	    </div>
 	<footer>
 		<p>Designed by Jingyuan - 2012</p>
 	</footer>

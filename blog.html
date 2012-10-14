@@ -3,7 +3,9 @@ layout: archives
 title: Blog archive
 date: 2011 to now
 ---
-<ul id = "introduction" class="post_list">
+<div id="try_post">
+<ul class="post_list">
+	<li><h2 class="archive">Archive</h2></li>
 	{% for post in site.posts %}
 	{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
 	{% if year != y %}
@@ -16,6 +18,6 @@ date: 2011 to now
   </li>
 {% endfor %}
 </ul>
-
+</div>
 
 
