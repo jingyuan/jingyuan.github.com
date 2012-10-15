@@ -142,7 +142,7 @@ li#email {
 }
 
 /* The blog css comes here */
-h2.archive {
+h2.list_title {
 	color: #CF2343;
 	font-size: 1.2em;
 	font-weight: 800;
@@ -179,9 +179,56 @@ li.year {
 	padding-top: 5px;
 }
 
+/*The default layout of the post comes here, only some extra styles */
+h2.post_title {
+	color: #CF2343;
+	font-size: 1.8em;
+	font-weight: 800;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 
+}
 
+a#back_list {
+	font-size: 1.8em;
+	margin: 0;
+	color: #a0a0a0;
+	display: block;
+	width: 122px;
+	padding-right: 3px;
+	text-align: right;
+	font-weight: 300;
+	
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+}
 
+a#back_list:hover {
+	color: #e4e4e4;
+	background: #CF2343;
+}
 
+	/* Then there is the Disqus style */
+#comment {
+	padding: 10px 0px 0px 5px; 
+}
+
+#dsq-content h3 {
+	font-family: inherit;
+	font-size: 1.62em;
+	font-weight: 600;	
+}
+
+#dsq-account-dropdown a,
+#dsq-subscribe a,
+a.dsq-brlink {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+		
+}
+	
 
 
