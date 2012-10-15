@@ -55,9 +55,11 @@ h1 {
 	margin-top: 30px;
 }
 
+/* The footer style is here!!! */
 footer {
 	font-size: 1.5em;
-	color: #a0a0a0;
+	color: #A0A0A0;
+	font-weight: 100;
 	width: 870;
 	text-align: center;
 	clear: both;
@@ -226,9 +228,31 @@ a#back_list:hover {
 a.dsq-brlink {
 	text-decoration: none;
 	color: black;
-	font-size: 1.2em;
-		
+	font-size: 1.5em;
 }
 	
+#dsq-sort-by,
+#dsq-pagination {
+	display: none;
+}
+
+a.dsq-brlink {
+	font-size: 1.5em;
+	color: #A0A0A0;
+	font-weight: 100;
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+
+a.dsq-toolbar-item {
+	-webkit-border-radius: 0;
+	zoom: 0.9;
+}
+	
+		/* The comment footer style, small changes */
+.dsq-comment-footer {
+	font-size: 1.5em;
+}
 
 
