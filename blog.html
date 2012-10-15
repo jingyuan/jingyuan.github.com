@@ -5,7 +5,7 @@ date: 2011 to now
 ---
 <div id="try_post">
 <ul class="post_list">
-	<li><h2 class="List_title">List</h2></li>
+	<li><h2 class="list_title">List</h2></li>
 	{% for post in site.posts %}
 	{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
 	{% if year != y %}
