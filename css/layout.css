@@ -223,6 +223,12 @@ a#back_list:hover {
 	font-weight: 600;	
 }
 
+.dsq-textarea-background {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+}
+
 #dsq-account-dropdown a,
 #dsq-subscribe a,
 a.dsq-brlink {
@@ -245,9 +251,8 @@ a.dsq-brlink {
 	float: right;
 }
 
-a.dsq-toolbar-item {
-	-webkit-border-radius: 0;
-	zoom: 0.9;
+.dsq-global-toolbar-right {
+	display: none;
 }
 	
 		/* The comment footer style, small changes */
