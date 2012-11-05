@@ -2,12 +2,12 @@
 layout: nil
 ---
 <?xml version="1.0"?>
-<rss version="2.0" xmlns: atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>functionn.com</title>
 		<link>http://functionn.github.com/</link>
-		<atom:link href="http://functionn.github.com/rss.xml" rel="self" type="application/rss+xml" />
-		<description>stuff from functionn.gitthub.com</description>
+		<atom:link href="http://jingyuan.github.com/rss.xml" rel="self" type="application/rss+xml" />
+		<description>stuff from jinyuan.gitthub.com</description>
 		<language>en-us, zh-cn</language>
 		<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
@@ -15,10 +15,10 @@ layout: nil
 		{% for post in site.posts %}
 		<item>
 			<title>{{ post.title }}</title>
-			<link>http://functionn.github.com{{ post.url }}</link>
+			<link>http://jingyuan.github.com{{ post.url }}</link>
 			<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-			<author>functionn.github@functionn.github.com (functionn)</author>
-			<guid>http://functionn.github.com{{ post.id}}</guid>
+			<author>jingyuan.github@jingyuan.github.com (jingyuan)</author>
+			<guid>http://jingyuan.github.com{{ post.id}}</guid>
 			<description>{{ post.content | xml_excape }}</description>
 		</item>
 		{% end for %}
