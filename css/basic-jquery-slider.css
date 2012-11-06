@@ -40,7 +40,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 }
 
 .go_back a:hover {
-	color: #e4e4e4;
+	color: #ffffff;
 	background: #CF2343;
 }
 
@@ -151,14 +151,42 @@ ol.bjqs-markers li.active-marker a{
   background:#CF2343;
 }
 
-#script {
+#script,
+#dl_link {
 	padding: 50px 15px 0px 15px;
 	font-size: 1.5em;
 	line-height: 1.6em;
 }
 
-#script h2{
+#script h2,
+#dl_link h2 {
 	font-size: 1.5em;
 	font-weight: 800;
 	padding-bottom: 20px;
 }
+
+/* Extended styles for some other related pages */
+	
+/* Here comes the style for the wallpaper page */
+#dl_link ul{
+	list-style: none;
+	padding: 0;
+	padding-left: 15px;
+	margin: 0;	
+}
+
+#dl_link a{
+	text-decoration: none;
+	text-align: left;
+	color: black;	
+}
+
+#dl_link a:hover{
+	color:#CF2343; 
+}
+
+#preview_img img{
+	border:5px #fff solid;
+	box-shadow:0 0 31px rgba(0,0,0,0.2);
+}
+
