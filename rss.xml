@@ -4,10 +4,10 @@ layout: nil
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>blog rss</title>
+		<title>Courage+</title>
 		<link>http://jingyuan.github.com/</link>
 		<atom:link href="http://jingyuan.github.com/rss.xml" rel="self" type="application/rss+xml" />
-		<description>stuff from jingyuan.gitthub.com</description>
+		<description>stuff from jingyuan.github.com</description>
 		<language>en-us, zh-cn</language>
 		<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
