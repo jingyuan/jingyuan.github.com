@@ -153,16 +153,9 @@ li#email {
 	line-height: 1.6em;
 }
 
-#introduction p::selection {
+::selection {
 	background-color: #f2c2cb;
 	text-shadow: none;
-}
-
-#introduction p code::selection,
-#introduction p em::selection,
-#introduction p span::selection,
-#introduction ol li::selection {
-	background-color: #f2c2cb;
 }
 
 #introduction p img {
