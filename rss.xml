@@ -5,9 +5,9 @@ layout: nil
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Courage+</title>
-		<link>http://jingyuan.github.com/</link>
-		<atom:link href="http://jingyuan.github.com/rss.xml" rel="self" type="application/rss+xml" />
-		<description>stuff from jingyuan.github.com</description>
+		<link>http://jingyuan.info/</link>
+		<atom:link href="http://jingyuan.info/rss.xml" rel="self" type="application/rss+xml" />
+		<description>stuff from jingyuan.info</description>
 		<language>en-us, zh-cn</language>
 		<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
@@ -15,10 +15,10 @@ layout: nil
 		{% for post in site.posts %}
 		<item>
 			<title>{{ post.title }}</title>
-			<link>http://jingyuan.github.com{{ post.url }}</link>
+			<link>http://jingyuan.info{{ post.url }}</link>
 			<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-			<author>jingyuan@jingyuan.github.com (jingyuan)</author>
-			<guid>http://jingyuan.github.com{{ post.id }}</guid>
+			<author>jingyuan@jingyuan.info (jingyuan)</author>
+			<guid>http://jingyuan.info{{ post.id }}</guid>
 			<description>{{ post.content | xml_excape }}</description>
 		</item>
 		{% endfor %}
