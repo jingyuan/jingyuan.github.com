@@ -1,5 +1,3 @@
-source: ./_source
-destination: ./_site
 markdown: rdiscount
 rdiscount:
     extensions: [smart]
