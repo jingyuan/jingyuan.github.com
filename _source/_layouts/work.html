@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="format-detection" conten="telephone=no"> -->
+	<title>{{page.title}}</title>
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/css/basic.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+</head>
+
+<body>
+<!-- #site-container -->
+<div id="site-container">
+<!-- #header from _include -->
+	{% include header.html %}
+
+<!-- #main -->
+	{% include go-back.html %}
+	
+	{{content}}
+<!-- //#main -->
+
+<!-- #footer -->
+	{% include footer.html %}
+<!-- //#footer  -->
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/slide.min.js"></script>
+<script type="text/javascript" src="/js/func.js"></script>
+
+    <!--  Attach the plug-in to the slider parent element and adjust the settings as required -->
+<script>
+ $(document).ready(function() {
+
+    $("#banner").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 950,
+        namespace: "centered-btns"
+      });
+ });
+</script>	
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/typography/vertical_rhythm";
+// #reset
+@import "partials/normalize";
+// #static grid
+@import "partials/blankwork";
+// #variables
+@import "partials/settings";
+// #style for isotope
+@import "partials/isotopeset";
+// #font
+@import "partials/fontset";
+// #style for slider
+@import "partials/slider";
+
+// * custom resets
+ul {
+	list-style: none;
+	padding: 0;
+}
+a,
+img {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+// * basic styles 
+body {
+	@include setfont;
+	@include adjust-leading-to(4);
+	background-color: lighten($back, 40%);
+}
+#site-container {
+	@include wrapper;
+	background-color: $secColor;
+	padding: 0 25px;
+	@include box-shadow(2px 0 4px rgba(0,0,0,0.1), -2px 0 4px rgba(0,0,0,0.1));
+}
+
+// * styles for header
+@import "partials/header";
+
+// * inside page navigation
+#p-container {
+	@include fullwidth;
+}
+
+#page-nav,  // the filter in index.html
+#blog-links, // the links in blog.html
+#self, // the contact info in about.html
+#date { // the date in every single post
+	@include column(2);
+	ul {
+		text-align: right;
+		padding-right: $padding;
+		background: url(/images/dots-ver.png) repeat-y right;
+		li a {
+			@include adjust-font-size-to(14px);
+			color: lighten($black, 70%);
+			padding: 0 3px;
+			@include transition(all 700ms linear 100ms);
+			&:hover {
+			color: $secColor;
+			background-color: $baseColor;
+			}
+		}
+		.active,
+		.link-title {
+			color: $secColor;
+			background-color: $baseColor;
+		}
+	}
+}
+
+#self {
+	margin-bottom: $bottom-mar;
+}
+
+#date {
+	padding-top: 20px;
+}
+
+// go-back in all secondary pages
+#go-back {
+	margin: 0 auto $margin * 2 $margin;
+	a {
+	color: lighten($black, 70%);
+	@include transition(all 700ms linear 100ms);
+	&:hover {
+		color: $secColor;
+		background: $baseColor;
+	}
+	}
+}
+
+
+// * content styles 
+#content,
+#blog-list,
+#self-content {
+	@include column(10);
+	margin-bottom: $bottom-mar;	
+}
+
+#post-content {
+	@include column(8);
+	margin-bottom: $bottom-mar;
+}
+
+#content .work {
+	padding: $padding;
+	margin: $margin;
+	@include border-radius(4px);
+	@include box-shadow(2px 2px 3px rgba(0,0,0,0.1));
+	a {
+		@include clearfix;
+		img {
+			display: block;
+		}
+	}
+	&:hover {
+		position: relative;
+		// z-index: 99;
+		@include scale(1.1);
+	}
+}
+
+#work-text {
+	margin:0 $margin * 30 $bottom-mar;
+}
+
+#blog-list ul {
+	margin-bottom: 0;
+	padding-left: 30px;
+	li {
+		&.year {
+		padding: 5px 0 0;
+		font-weight: bold;
+		}
+		&:first-child {
+			color: $baseColor;
+		}
+		time {
+			padding: 0 $padding * 2 0 $padding;
+		}
+		a {
+			color: lighten($black, 50%);
+		&:hover {
+			color: $baseColor;
+		}
+		}
+	}
+}
+
+.mobile-order {
+	display: none;
+}
+
+
+
+
+
+// * disqus comment style
+@import "partials/comment";
+
+// * footer styles
+@import "partials/footer";
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="format-detection" conten="telephone=no"> -->
+	<title>{{page.title}}</title>
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed for Jingyuan.info/blog" href="/rss.xml">
+	<link rel="stylesheet" type="text/css" href="/css/basic.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+</head>
+
+<body>
+<!-- #site-container -->
+<div id="site-container">
+<!-- #header from _include -->
+	{% include header.html %}
+
+<!-- #main -->
+	{{content}}
+<!-- //#main -->
+
+<!-- #footer -->
+	{% include footer.html %}
+<!-- //#footer  -->
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/func.js"></script>
+<script type="text/javascript" src="/js/isotope.min.js"></script>	
+
+</body>
+</html>

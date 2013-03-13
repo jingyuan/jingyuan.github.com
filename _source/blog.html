@@ -1,0 +1,45 @@
+---
+layout: layout
+title: Blog-Jingyuan
+permalink: /story/
+---
+<!-- #main -->
+<section id="blog-links">
+	<ul id="link-friend">
+		<li><a class="link-title">My dear friends</a></li>
+		<li><a href="http://claudia2104.blogbus.com/">Claudia Wen</a></li>
+		<li><a href="http://yanghaofan.blogbus.com/">Ian Yang</a></li>
+		<li><a href="http://belovedunicorn.blogbus.com/">Jessie Wang</a></li>
+		<li><a href="http://nikki723.blogbus.com/">Nikki Zheng</a></li>
+		<li><a href="http://blog.jjgod.org/" >Jjgod</a></li>
+	</ul>
+</section>
+<!-- #content -->
+<section id="blog-list">
+	<ul class="post-list">
+		<li class="list-title"><span>Posts</span></li>
+		{% for post in site.categories.story %}
+		{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+		{% if year != y %}
+		{% assign year = y %}
+			<li class="year">{{ y }}</li>
+		{% endif %}
+		<li>
+			<time class = "post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+			<a class="post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</section>
+<section id="blog-links-m" class="mobile-order">
+	<ul id="link-friend-m">
+		<li class="link-title"><span>My dear friends</span></li>
+		<li><a href="http://claudia2104.blogbus.com/">Claudia Wen</a></li>
+		<li><a href="http://yanghaofan.blogbus.com/">Ian Yang</a></li>
+		<li><a href="http://belovedunicorn.blogbus.com/">Jessie Wang</a></li>
+		<li><a href="http://nikki723.blogbus.com/">Nikki Zheng</a></li>
+		<li><a href="http://blog.jjgod.org/" >Jjgod</a></li>
+	</ul>
+</section>
+
+<!-- //#main -->

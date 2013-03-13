@@ -1,0 +1,89 @@
+// * content style (specifically work.html)
+#work-cont {
+	@include fullwidth;
+	position: relative;
+	margin-bottom: 30px;
+	#banner {
+		position: relative;
+		list-style: none;
+		overflow: hidden;
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		@include box-shadow(0 2px 3px rgba(0,0,0,0.2));
+
+		li {
+			-webkit-backface-visibility: hidden;
+			position: absolute;
+			display: none;
+			width: 100%;
+			left: 0;
+			top: 0;
+		}
+
+		li:first-child {
+			position: relative;
+			display: block;
+			float: left;
+		}
+
+		img {
+			display: block;
+			height: auto;
+			float: left;
+			width: 100%;
+			border: 0;
+		}
+	}
+
+	.centered-btns_nav {
+		z-index: 5;
+		position: absolute;
+		top: 50%;
+		text-indent: -9999px;
+		overflow: hidden;
+		text-decoration: none;
+		height: 45px;
+		width: 20px;
+		background: transparent url(/images/nav-arrow.gif) no-repeat left top;
+		margin-top: -30px;
+		margin-left: 10px;
+		@include opacity(0.5);
+		&.next {
+			background-position: right top;
+			left: auto;
+			right: 0;
+			margin-right: 10px;
+		}
+		&:hover {
+			@include scale(1.1);
+			@include opacity(1.0);
+		}
+	}
+	.centered-btns_tabs {
+		margin-top: 10px;
+		text-align: center;
+		li {
+			float: none;
+			display: inline;
+		}
+		a {
+			width: 9px;
+			height: 9px;
+			display: inline-block;
+			margin: 0 2px;
+			text-indent: -9999px;
+			overflow: hidden;
+			border-radius: 15px;
+			background: rgba(0,0,0,0.2);
+			@include box-shadow(inset 0 0 2px rgba(0,0,0,0.2));
+			}
+		}
+	.centered-btns_here a {
+		background: rgba(0,0,0,0.6);
+	}
+	.info {
+		position: absolute;
+		height: 0;
+	}
+}

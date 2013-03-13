@@ -1,0 +1,30 @@
+// * Isotope Filtering *
+.isotope-item {
+	z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+
+// * Isotope CSS3 transitions *
+.isotope,
+.isotope .isotope-item {
+	@include transition-duration(0.8s);
+}
+
+.isotope {
+	@include transition-property(height, width);
+}
+
+.isotope .isotope-item {
+	@include transition-property(transform, opacity);
+}
+
+// * disabling isotope CSS3 transitions *
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+	@include transition-duration(0);
+}

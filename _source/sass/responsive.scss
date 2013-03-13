@@ -1,0 +1,228 @@
+@import "compass";
+@import "partials/blankwork";
+@import "partials/settings";
+
+// style for tablet
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+html, body {
+	height: 100%;
+}
+
+#site-container {
+	width: 768px;
+}
+
+#header, #footer {
+	width: 100%;
+}
+
+#content,
+#blog-list,
+#self-content {
+	width: 585px;
+}
+
+#post-content,
+#work-text {
+	@include clearfix;
+	width: 520px;
+}
+ 
+#blog-list ul {
+	display: block;
+	padding-left: 30px;
+}
+.mobile-order {
+	display: none;
+}
+
+}
+
+//style for mobile
+@media only screen and (max-width: 767px) {
+#site-container {
+	width: 300px;
+	height: auto;
+	padding: 0 10px;
+}	
+
+#header, #footer {
+	width: 100%;
+	@include clearfix;
+}
+
+#header {
+	h1{
+	padding: 10px 5px 5px;
+	margin-bottom: 20px;
+	}
+	#menu-nav {
+		display: none;
+	}
+	#menu-nav-drop {
+		display: block;
+		width: 150px;
+		padding-right: 50px;
+		margin: 0 auto 30px;
+	}
+}
+
+// * index
+#site-nav {
+	width: 100%;
+}
+
+#page-nav {
+	width: 100%;
+	overflow: auto;
+	ul {
+		text-align: left;
+		li {
+			float: left;
+			padding: 0 $padding;
+		}
+	}
+}
+
+#page-nav {
+	@include clearfix;
+	display: block;
+	float: none;
+	width: 280px;
+	font-size: 0.9em;
+	margin: 0 auto;
+	padding-bottom: $padding;
+	background: url(../images/dots.png) repeat-x bottom;
+	ul {
+		text-align: left;
+		padding-right: 0;
+		li {
+			float: left;
+			padding: 0 3px;
+			a {
+				padding: 0;
+			}
+		}
+	}
+}
+
+#content {
+	display: block;
+	float: none;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#work-cont {
+	width: 100%;
+}
+
+#work-text {
+	display: block;
+	width: 300px;
+	margin: 0 auto 40px;
+	p {
+		@include adjust-font-size-to(14px);
+	}
+}
+
+// * blog 
+#blog-links {
+	display: none;
+}
+
+#blog-links-m 
+li:nth-child(n+1) a {
+	@include adjust-font-size-to(14px);
+	color: lighten($black, 70%);
+	padding: 0 3px;
+}
+
+#blog-list,
+.mobile-order {
+	@include clearfix;
+	display: block;
+	width: 100%;
+	margin: 0;
+	ul {
+		padding: 0 10px;
+		margin: 5px auto;
+		li {
+			font-size: 0.9em;
+			line-height: 1.4em;
+			color: $black;
+			time {
+				padding: 0 5px 0 0;
+			}
+		}
+		li:first-child {
+			display: block;
+			padding-bottom: 5px;
+			background: url(../images/dots.png) repeat-x bottom;
+			span {
+				color: $baseColor;
+				padding: 0 5px;
+			}
+		}
+	}
+}
+
+#blog-links-m {
+	overflow: hidden;
+	margin: 0 0 40px;
+}
+
+#p-container {
+	width: 100%;
+	#date {
+		@include adjust-font-size-to(12px);
+		margin-left: 0;
+	}
+	#post-content {
+		display: inline-block;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		h3 {
+			margin-top: 8px;
+		}
+		p {
+			@include adjust-font-size-to(14px);
+		}
+	}
+}
+
+
+// *about page
+#self {
+	width: 100%;
+	margin: 0 auto;
+	ul{
+		background: none;
+		li:first-child {
+			float: left;
+			padding: 0 $padding;
+			background: url(../images/dots-ver.png) repeat-y right;
+		}
+		li:nth-child(n+2) {
+			text-align: left;
+			padding-left: 10px;
+			span {
+				padding-left: 3px;
+			}
+		}	
+	}	
+}
+
+#self-content {
+	display: block;
+	overflow: hidden;
+	float: none;
+	@include adjust-font-size-to(14px);
+	width: 290px;
+	margin: 0 auto 30px;
+	padding: 0 5px;
+}
+
+}

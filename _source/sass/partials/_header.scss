@@ -1,0 +1,41 @@
+#header {
+	@include fullwidth;
+
+	h1 {
+		margin: 0;
+		@include adjust-font-size-to(36px);
+		font-weight: 400;
+		color: $secColor;
+		background-color: $baseColor;
+		padding: 30px 10px 10px;
+		border-bottom: 7px solid darken($baseColor, 5%);
+		@include box-shadow(0 3px 5px rgba(0,0,0,0.5));
+		-webkit-text-stroke: 1px rgba(0,0,0,0.1);
+	}
+
+	#menu-nav {
+		float: right;
+		margin: 30px 0 70px;
+		padding-right: $padding * 2;
+		li {
+			float: left;
+			padding: 0 $padding;
+			text-align: center;
+			text-transform: uppercase;
+			a {
+				color: lighten($black, 70%);
+				padding: 0 5px 0;
+			}
+		}
+		.current a{
+				color: $baseColor;
+				background: none;
+				background: url(../images/arrow.png) no-repeat top;
+				padding-top: 48px;
+				background-size: 75px;
+		}
+	}
+	#menu-nav-drop {
+		display: none;
+	}
+}

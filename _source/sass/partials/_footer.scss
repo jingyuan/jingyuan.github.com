@@ -1,0 +1,12 @@
+#footer {
+	@include clearfix;
+	width: 100%;
+	text-align: right;
+	div {
+		clear: both;
+		font-size: 0.8em;
+		color: $secColor;
+		background-color: $baseColor;
+		padding-right: 10px;
+	}
+}

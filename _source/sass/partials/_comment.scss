@@ -1,0 +1,16 @@
+
+#dsq-content #dsq-global-toolbar {
+	display: none;
+}
+
+#dsq-content .dsq-options {
+	display: none;
+}
+
+#dsq-content {
+	padding-top: 20px;
+}
+
+#dsq-content button.dsq-button {
+	@include border-radius(0);
+}

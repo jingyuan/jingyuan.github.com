@@ -1,1 +1,8 @@
-_site/*
+# _site/*
+
+.DS_Store
+
+_site
+_build
+*.css
+
