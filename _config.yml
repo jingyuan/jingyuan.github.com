@@ -5,6 +5,5 @@ rdiscount:
     extensions: [smart]
 permalink: /:categories/:title.html
 
-plugins: ./_source/_plugins
 auto: true
 server: true
