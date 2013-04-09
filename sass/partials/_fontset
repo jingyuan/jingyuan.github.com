@@ -1,3 +1,0 @@
-@mixin setfont {
-	font-family: "PT Sans", Verdana, sans-serif;
-}
