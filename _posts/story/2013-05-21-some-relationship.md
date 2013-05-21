@@ -1,8 +1,8 @@
-—
+---
 layout: story
 title: Some relationship
 category: story
-—
+---
 
 ###也聊聊感情###
 
