@@ -41,25 +41,30 @@
   }
 
   /* line 31, ../sass/responsive.scss */
+  #work-cont {
+    width: 100%;
+  }
+
+  /* line 35, ../sass/responsive.scss */
   #blog-list ul {
     display: block;
     padding-left: 30px;
   }
 
-  /* line 35, ../sass/responsive.scss */
+  /* line 39, ../sass/responsive.scss */
   .mobile-order {
     display: none;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 43, ../sass/responsive.scss */
+  /* line 47, ../sass/responsive.scss */
   #site-container {
     width: 300px;
     height: auto;
     padding: 0 10px;
   }
 
-  /* line 49, ../sass/responsive.scss */
+  /* line 53, ../sass/responsive.scss */
   #header, #footer {
     width: 100%;
     *zoom: 1;
@@ -74,16 +79,16 @@
     clear: both;
   }
 
-  /* line 55, ../sass/responsive.scss */
+  /* line 59, ../sass/responsive.scss */
   #header h1 {
     padding: 10px 5px 5px;
     margin-bottom: 20px;
   }
-  /* line 59, ../sass/responsive.scss */
+  /* line 63, ../sass/responsive.scss */
   #header #menu-nav {
     display: none;
   }
-  /* line 62, ../sass/responsive.scss */
+  /* line 66, ../sass/responsive.scss */
   #header #menu-nav-drop {
     display: block;
     width: 150px;
@@ -91,27 +96,27 @@
     margin: 0 auto 30px;
   }
 
-  /* line 71, ../sass/responsive.scss */
+  /* line 75, ../sass/responsive.scss */
   #site-nav {
     width: 100%;
   }
 
-  /* line 75, ../sass/responsive.scss */
+  /* line 79, ../sass/responsive.scss */
   #page-nav {
     width: 100%;
     overflow: auto;
   }
-  /* line 78, ../sass/responsive.scss */
+  /* line 82, ../sass/responsive.scss */
   #page-nav ul {
     text-align: left;
   }
-  /* line 80, ../sass/responsive.scss */
+  /* line 84, ../sass/responsive.scss */
   #page-nav ul li {
     float: left;
     padding: 0 7px;
   }
 
-  /* line 87, ../sass/responsive.scss */
+  /* line 91, ../sass/responsive.scss */
   #page-nav {
     *zoom: 1;
     display: block;
@@ -131,22 +136,22 @@
   #page-nav:after {
     clear: both;
   }
-  /* line 96, ../sass/responsive.scss */
+  /* line 100, ../sass/responsive.scss */
   #page-nav ul {
     text-align: left;
     padding-right: 0;
   }
-  /* line 99, ../sass/responsive.scss */
+  /* line 103, ../sass/responsive.scss */
   #page-nav ul li {
     float: left;
     padding: 0 3px;
   }
-  /* line 102, ../sass/responsive.scss */
+  /* line 106, ../sass/responsive.scss */
   #page-nav ul li a {
     padding: 0;
   }
 
-  /* line 109, ../sass/responsive.scss */
+  /* line 113, ../sass/responsive.scss */
   #content {
     display: block;
     float: none;
@@ -155,29 +160,29 @@
     margin-left: auto;
   }
 
-  /* line 117, ../sass/responsive.scss */
+  /* line 121, ../sass/responsive.scss */
   #work-cont {
     width: 100%;
   }
 
-  /* line 121, ../sass/responsive.scss */
+  /* line 125, ../sass/responsive.scss */
   #work-text {
     display: block;
     width: 300px;
     margin: 0 auto 40px;
   }
-  /* line 125, ../sass/responsive.scss */
+  /* line 129, ../sass/responsive.scss */
   #work-text p {
     font-size: 0.875em;
     line-height: 1.28571em;
   }
 
-  /* line 131, ../sass/responsive.scss */
+  /* line 135, ../sass/responsive.scss */
   #blog-links {
     display: none;
   }
 
-  /* line 136, ../sass/responsive.scss */
+  /* line 140, ../sass/responsive.scss */
   #blog-links-m
   li:nth-child(n+1) a {
     font-size: 0.875em;
@@ -186,7 +191,7 @@
     padding: 0 3px;
   }
 
-  /* line 143, ../sass/responsive.scss */
+  /* line 147, ../sass/responsive.scss */
   #blog-list,
   .mobile-order {
     *zoom: 1;
@@ -206,97 +211,97 @@
   .mobile-order:after {
     clear: both;
   }
-  /* line 148, ../sass/responsive.scss */
+  /* line 152, ../sass/responsive.scss */
   #blog-list ul,
   .mobile-order ul {
     padding: 0 10px;
     margin: 5px auto;
   }
-  /* line 151, ../sass/responsive.scss */
+  /* line 155, ../sass/responsive.scss */
   #blog-list ul li,
   .mobile-order ul li {
     font-size: 0.9em;
     line-height: 1.4em;
     color: black;
   }
-  /* line 155, ../sass/responsive.scss */
+  /* line 159, ../sass/responsive.scss */
   #blog-list ul li time,
   .mobile-order ul li time {
     padding: 0 5px 0 0;
   }
-  /* line 159, ../sass/responsive.scss */
+  /* line 163, ../sass/responsive.scss */
   #blog-list ul li:first-child,
   .mobile-order ul li:first-child {
     display: block;
     padding-bottom: 5px;
     background: url(../images/dots.png) repeat-x bottom;
   }
-  /* line 163, ../sass/responsive.scss */
+  /* line 167, ../sass/responsive.scss */
   #blog-list ul li:first-child span,
   .mobile-order ul li:first-child span {
     color: #d51c52;
     padding: 0 5px;
   }
 
-  /* line 171, ../sass/responsive.scss */
+  /* line 175, ../sass/responsive.scss */
   #blog-links-m {
     overflow: hidden;
     margin: 0 0 40px;
   }
 
-  /* line 176, ../sass/responsive.scss */
+  /* line 180, ../sass/responsive.scss */
   #p-container {
     width: 100%;
   }
-  /* line 178, ../sass/responsive.scss */
+  /* line 182, ../sass/responsive.scss */
   #p-container #date {
     font-size: 0.75em;
     line-height: 1.5em;
     margin-left: 0;
   }
-  /* line 182, ../sass/responsive.scss */
+  /* line 186, ../sass/responsive.scss */
   #p-container #post-content {
     display: inline-block;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
-  /* line 187, ../sass/responsive.scss */
+  /* line 191, ../sass/responsive.scss */
   #p-container #post-content h3 {
     margin-top: 8px;
   }
-  /* line 190, ../sass/responsive.scss */
+  /* line 194, ../sass/responsive.scss */
   #p-container #post-content p {
     font-size: 0.875em;
     line-height: 1.28571em;
   }
 
-  /* line 198, ../sass/responsive.scss */
+  /* line 202, ../sass/responsive.scss */
   #self {
     width: 100%;
     margin: 0 auto;
   }
-  /* line 201, ../sass/responsive.scss */
+  /* line 205, ../sass/responsive.scss */
   #self ul {
     background: none;
   }
-  /* line 203, ../sass/responsive.scss */
+  /* line 207, ../sass/responsive.scss */
   #self ul li:first-child {
     float: left;
     padding: 0 7px;
     background: url(../images/dots-ver.png) repeat-y right;
   }
-  /* line 208, ../sass/responsive.scss */
+  /* line 212, ../sass/responsive.scss */
   #self ul li:nth-child(n+2) {
     text-align: left;
     padding-left: 10px;
   }
-  /* line 211, ../sass/responsive.scss */
+  /* line 215, ../sass/responsive.scss */
   #self ul li:nth-child(n+2) span {
     padding-left: 3px;
   }
 
-  /* line 218, ../sass/responsive.scss */
+  /* line 222, ../sass/responsive.scss */
   #self-content {
     display: block;
     overflow: hidden;
