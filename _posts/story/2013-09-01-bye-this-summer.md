@@ -1,8 +1,8 @@
 ---
- layout: story
+layout: story
 title: 和夏天再见
 category: story
- ---
+---
  
 ###和夏天再见###
 
