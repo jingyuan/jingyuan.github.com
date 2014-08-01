@@ -112,6 +112,10 @@ body {
 #post-content {
 	@include column(8);
 	margin-bottom: $bottom-mar;
+	img {
+		width: 100%;
+		padding-top: $padding/2;
+	}
 }
 
 #content .work {
