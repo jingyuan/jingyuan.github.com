@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 rdiscount:
     extensions: [smart]
 permalink: /:categories/:title.html
